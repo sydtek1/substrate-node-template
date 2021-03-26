@@ -46,6 +46,7 @@ pallet-transaction-payment-rpc-runtime-api = { default-features = false, version
 #Smart contract pallet
 pallet-contracts = { default-features = false, version = '3.0.0' }
 pallet-contracts-primitives = { default-features = false, version = '3.0.0' }
+pallet-contracts-rpc-runtime-api = { default-features = false, version = '3.0.0' }
 
 sp-api = { default-features = false, version = '3.0.0' }
 sp-block-builder = { default-features = false, version = '3.0.0' }
