@@ -7,7 +7,7 @@
 
 use std::sync::Arc;
 
-use node_template_runtime::{opaque::Block, AccountId, Balance, Index, BlockNumber};
+use projekt_blakchain::{opaque::Block, AccountId, Balance, Index, BlockNumber};
 /// Smart Contract RPC
 use pallet_contracts_rpc::{Contracts, ContractsApi};
 use sp_api::ProvideRuntimeApi;

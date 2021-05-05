@@ -1,5 +1,5 @@
 use sp_core::{Pair, Public, sr25519};
-use node_template_runtime::{
+use projekt_blakchain::{
 	AccountId, AuraConfig, BalancesConfig, GenesisConfig, GrandpaConfig,
 	SudoConfig, SystemConfig, WASM_BINARY, Signature
 };
@@ -9,7 +9,7 @@ use sp_runtime::traits::{Verify, IdentifyAccount};
 use sc_service::ChainType;
 
 // Smart Contract 
-use node_template_runtime::ContractsConfig;
+use projekt_blakchain::ContractsConfig;
 // The URL for the telemetry server.
 // const STAGING_TELEMETRY_URL: &str = "wss://telemetry.polkadot.io/submit/";
 
