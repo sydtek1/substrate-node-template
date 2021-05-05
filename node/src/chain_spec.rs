@@ -1,3 +1,4 @@
+use serde_json::json;
 use sp_core::{Pair, Public, sr25519};
 use projekt_blakchain::{
 	AccountId, AuraConfig, BalancesConfig, GenesisConfig, GrandpaConfig,
@@ -121,7 +122,16 @@ pub fn local_testnet_config() -> Result<ChainSpec, String> {
 		// Protocol ID
 		None,
 		// Properties
-		None,
+		Some(
+            json!({
+                "ss58Format": 42,
+                "tokenDecimals": 10,
+                "tokenSymbol": "BLAK"
+            })
+            .as_object()
+            .expect("network properties generation can not fail; qed")
+            .to_owned(),
+        ),
 		// Extensions
 		None,
 	))
